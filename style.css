@@ -1,0 +1,248 @@
+:root{
+    --bg: #f4f7fb;
+    --clean: #ffffff;
+    --primary: #4338ca;
+    --primary-dark: #312e81;
+    --accent: #06b6d4;
+    --addi: #6b7280;
+    font-family: 'Segoe UI';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #111827;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-shadow: 0 1px 6px rgba(2,6,23,0.06);
+    background-color: var(--primary);
+    color: var(--clean);
+    font-weight: 600;
+}
+
+header nav a {
+    color: var(--clean);
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #ffffff1a;
+}
+
+header nav a:hover {
+    background: #ffffff40;
+}
+/* HEADER */
+
+/* KOTAK */
+.container {
+    max-width: 640px;
+    margin: 40px auto;
+    padding: 24px;
+    text-align: center;
+    background: var(--clean);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px #0b76ff0f;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.partition {
+    background: var(--clean);
+    padding: 14px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #0000000d;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #f0f0f0;
+}
+
+.partition:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px #4338ca26;
+}
+
+.partition a {
+    color: var(--primary);
+    text-decoration: none;   
+}
+
+.partition a:hover {
+    color: var(--accent);
+}
+
+.partition p {
+    font-size: 14px;
+    color: var(--addi);
+}
+/* KOTAK */
+
+/* INPUTAN */
+.input, select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.input:focus, select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 6px #06b6d466;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--clean);
+    cursor: pointer;
+    border: none;
+    width: 100%
+}
+
+.buyBtn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: var(--clean);
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+}
+
+.btn:hover, .buyBtn:hover {
+    box-shadow: 0 6px 16px #4338ca40;
+    transform: translateY(-2px);
+}
+/* INPUTAN */
+
+/* PEMBERITAHUAN */
+.notice {
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 14px
+}
+
+.notice.error {
+    background: #fff0f0;
+    color: #dc2626;
+    border: 1px solid #ffd6d6
+}
+
+.notice.ok {
+    background: #f0fff6;
+    color: #16a34a;
+    border: 1px solid #bbf0d0
+}
+/* PEMBERITAHUAN */
+
+/* DROPDOWN */
+select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%2306b6d4" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px;
+}
+/* DROPDOWN */
+
+/* FOOTER */
+footer {
+    align-items: center;
+    box-shadow: 0 1px 6px rgba(2,6,23,0.06);
+    background-color: var(--primary);
+}
+
+footer p {
+    padding: 25px 20px;
+    text-align: center;
+    color: var(--clean);
+    font-size: 14px;
+}
+/* FOOTER */
+
+/* PERHITUNGAN */
+.photo-upload {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.photo-section {
+    display: grid;
+    gap: 10px;
+}
+
+.photo-section div {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-section label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+}
+
+.premium-result {
+    background-color: #f0fff6;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    border: 1px solid #bbf0d0;
+    display: none;
+}
+
+.order-summary {
+    background-color: #f6fbff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* PERHITUNGAN */
+
+/* TABEL */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #e2eff9;
+}
+/* TABEL */

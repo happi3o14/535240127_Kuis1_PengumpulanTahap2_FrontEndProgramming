@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapsuransi - Life Insurance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><strong>Hapsuransi | Happy Calista - 535240127</strong></div>
+    </header>
+    <div class="container">
+        <h2>Life Insurance</h2>
+        <p>Life insurance with flexible coverage options.</p>
+        <form id="lifeForm">
+            <input type="text" id="lifeName" class="input" placeholder="Full Name as per ID Card" required>
+            <input type="date" id="lifeDOB" class="input" placeholder="Date of Birth" required>
+            <div class="input-group">
+                <label>Amount of coverage:</label>
+                <select id="covAmt" class="input" required>
+                    <option value="">Select the amount of coverage</option>
+                    <option value="1000000000">Rp1.000.000.000</option>
+                    <option value="2000000000">Rp2.000.000.000</option>
+                    <option value="3500000000">Rp3.500.000.000</option>
+                    <option value="5000000000">Rp5.000.000.000</option>
+                    <option value="10000000000">Rp10.000.000.000</option>
+                </select>
+            </div>
+            <button type="button" id="calculateLifeBtn" class="btn">Calculate Premium</button>
+        </form>
+        <div id="lifePremiumResult" class="premium-result">
+            <h3>Premium Calculation Result</h3>
+            <p>Your monthly premium: <span id="lifePremiumAmount"></span></p>
+            <button id="lifeBuyBtn" class="buyBtn">Checkout</button>
+        </div>
+        <a href="home.html" id="backBtn">Back</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Happy Calista | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

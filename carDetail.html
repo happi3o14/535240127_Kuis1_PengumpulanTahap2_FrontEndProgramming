@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapsuransi - Car Insurance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><strong>Hapsuransi | Happy Calista - 535240127</strong></div>
+    </header>
+    <div class="container">
+        <h2>Car Insurance</h2>
+        <p>Car protection from the risk of accidents and damage.</p>
+        <form id="carForm">
+            <input type="text" id="carBrand" class="input" placeholder="Car Brand" required>
+            <input type="text" id="carType" class="input" placeholder="Car Type" required>
+            <input type="number" id="carYear" class="input" placeholder="Production Year" min="1900" max="2025" required>
+            <input type="number" id="carPrice" class="input" placeholder="Car Price (Rp)" min="0" required>
+            <input type="text" id="carPlate" class="input" placeholder="Car Plate Number" required>
+            <input type="text" id="carEngine" class="input" placeholder="Engine Number" required>
+            <input type="text" id="carChassis" class="input" placeholder="Chassis Number" required>
+            <input type="text" id="carOwner" class="input" placeholder="Owner Name" required>
+            <div class="photo-upload">
+                <p>Upload Photos:</p>
+                <div class="photo-section">
+                    <div>
+                        <label for="frontPhoto">Front view</label>
+                        <input type="file" id="frontPhoto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="backPhoto">Back view</label>
+                        <input type="file" id="backPhoto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="leftPhoto">Left view</label>
+                        <input type="file" id="leftPhoto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="rightPhoto">Right view</label>
+                        <input type="file" id="rightPhoto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="dashboardPhoto">Dashboard</label>
+                        <input type="file" id="dashboardPhoto" accept="image/*" required>
+                    </div>
+                    <div>
+                        <label for="enginePhoto">Machine</label>
+                        <input type="file" id="enginePhoto" accept="image/*" required>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="calculateBtn" class="btn">Calculate Premium</button>
+        </form>
+        <div id="premiumResult" class="premium-result">
+            <h3>Premium Calculation Result</h3>
+            <p>Your annual premium: <span id="premiumAmount"></span></p>
+            <button id="buyBtn" class="buyBtn">Checkout</button>
+        </div>
+        <a href="home.html" id="backBtn">Back</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Happy Calista | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hapsuransi - Health Insurance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><strong>Hapsuransi | Happy Calista - 535240127</strong></div>
+    </header>
+    <div class="container">
+        <h2>Health Insurance</h2>
+        <p>Health protection for you and your family.</p>
+        <form id="healthForm">
+            <input type="text" id="healthName" class="input" placeholder="Full Name as per ID Card" required>
+            <input type="date" id="healthDOB" class="input" placeholder="Date of Birth" required>
+            <input type="text" id="healthJob" class="input" placeholder="Job" required>
+            <div class="input-group">
+                <label>Do you smoke:</label>
+                <div>
+                    <input type="radio" id="smokeYes" name="smoking" value="yes" required>
+                    <label for="smokeYes">Yes</label>
+                    <input type="radio" id="smokeNo" name="smoking" value="no">
+                    <label for="smokeNo">No</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Do you have a history of hypertension:</label>
+                <div>
+                    <input type="radio" id="hypertensionYes" name="hypertension" value="yes" required>
+                    <label for="hypertensionYes">Yes</label>
+                    <input type="radio" id="hypertensionNo" name="hypertension" value="no">
+                    <label for="hypertensionNo">No</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Do you have diabetes:</label>
+                <div>
+                    <input type="radio" id="diabetesYes" name="diabetes" value="yes" required>
+                    <label for="diabetesYes">Yes</label>
+                    <input type="radio" id="diabetesNo" name="diabetes" value="no">
+                    <label for="diabetesNo">No</label>
+                </div>
+            </div>
+            <button type="button" id="calculateHealthBtn" class="btn">Calculate Premium</button>
+        </form>
+        <div id="healthPremiumResult" class="premium-result">
+            <h3>Premium Calculation Result</h3>
+            <p>Your annual premium: <span id="healthPremiumAmount"></span></p>
+            <button id="healthBuyBtn" class="buyBtn">Checkout</button>
+        </div>
+        <a href="home.html" id="backBtn">Back</a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Happy Calista | All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
