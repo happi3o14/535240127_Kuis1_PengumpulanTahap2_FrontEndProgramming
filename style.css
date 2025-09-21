@@ -10,12 +10,16 @@
 
 * {
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
-body {
+html, body {
     margin: 0;
     background: var(--bg);
     color: #111827;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
 }
 
 /* HEADER */
@@ -45,6 +49,10 @@ header nav a:hover {
 /* HEADER */
 
 /* KOTAK */
+main {
+    flex: 1;
+}
+
 .container {
     max-width: 640px;
     margin: 40px auto;
@@ -89,6 +97,10 @@ header nav a:hover {
 .partition p {
     font-size: 14px;
     color: var(--addi);
+}
+
+#desc, #bnf {
+    text-align: justify;
 }
 /* KOTAK */
 
@@ -170,6 +182,7 @@ footer {
     align-items: center;
     box-shadow: 0 1px 6px rgba(2,6,23,0.06);
     background-color: var(--primary);
+    margin-top: auto;
 }
 
 footer p {
